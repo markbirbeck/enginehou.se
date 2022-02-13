@@ -1,3 +1,6 @@
+clean:
+	rm -rf publish
+
 publish:
 	mkdir publish
 
