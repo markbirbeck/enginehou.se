@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/markbirbeck/enginehou.se#readme",
   "dependencies": {
+    "livereload": "^0.9.3",
     "rehype-document": "^6.0.1",
     "rehype-format": "^4.0.1",
     "rehype-stringify": "^9.0.3",
