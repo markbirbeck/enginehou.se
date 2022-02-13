@@ -8,6 +8,14 @@ For example:
 
 ```shell
 $ node src < docs/example.md
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Contents</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
 <h1 id="hello-world">Hello World</h1>
 <h2 id="table-of-content">Table of Content</h2>
 <ul>
@@ -20,4 +28,7 @@ $ node src < docs/example.md
 <h2 id="use">Use</h2>
 <p>More <code>text</code>.</p>
 <h2 id="license">License</h2>
-<p>MIT</p>%
+<p>MIT</p>
+</body>
+</html>
+
