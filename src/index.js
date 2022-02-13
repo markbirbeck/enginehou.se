@@ -5,6 +5,7 @@ import remarkRehype from 'remark-rehype'
 import remarkSlug from 'remark-slug'
 import remarkToc from 'remark-toc'
 import rehypeDocument from 'rehype-document'
+import rehypeFormat from 'rehype-format'
 import rehypeStringify from 'rehype-stringify'
 
 const processor = unified()
@@ -13,6 +14,7 @@ const processor = unified()
   .use(remarkToc)
   .use(remarkRehype)
   .use(rehypeDocument, {title: 'Contents'})
+  .use(rehypeFormat)
   .use(rehypeStringify)
 
 process.stdin.pipe(stream(processor)).pipe(process.stdout)
