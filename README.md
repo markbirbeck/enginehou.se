@@ -10,6 +10,11 @@ For example:
 $ node src < docs/example.md
 <h1 id="hello-world">Hello World</h1>
 <h2 id="table-of-content">Table of Content</h2>
+<ul>
+<li><a href="#install">Install</a></li>
+<li><a href="#use">Use</a></li>
+<li><a href="#license">License</a></li>
+</ul>
 <h2 id="install">Install</h2>
 <p>A <strong>example</strong>.</p>
 <h2 id="use">Use</h2>
