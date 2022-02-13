@@ -13,7 +13,10 @@ const processor = unified()
   .use(remarkSlug)
   .use(remarkToc)
   .use(remarkRehype)
-  .use(rehypeDocument, {title: 'Engine House Blog'})
+  .use(rehypeDocument, {
+    script: 'document.write(\'<script src="http://\' + (location.host || \'localhost\').split(\':\')[0] + \':35729/livereload.js?snipver=1"></\' + \'script>\')',
+    title: 'Engine House Blog'
+  })
   .use(rehypeFormat)
   .use(rehypeStringify)
 
