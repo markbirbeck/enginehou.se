@@ -6,3 +6,6 @@ publish:
 
 build: publish
 	node src/ < docs/index.md > publish/index.html
+
+livereload: build
+	npx livereload publish
