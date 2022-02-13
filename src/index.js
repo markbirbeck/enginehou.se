@@ -13,7 +13,7 @@ const processor = unified()
   .use(remarkSlug)
   .use(remarkToc)
   .use(remarkRehype)
-  .use(rehypeDocument, {title: 'Contents'})
+  .use(rehypeDocument, {title: 'Engine House Blog'})
   .use(rehypeFormat)
   .use(rehypeStringify)
 
