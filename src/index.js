@@ -1,5 +1,7 @@
+import {args} from 'unified-args'
 import {stream} from 'unified-stream'
 import {unified} from 'unified'
+import extensions from 'markdown-extensions'
 import remarkParse from 'remark-parse'
 import remarkRehype from 'remark-rehype'
 import remarkSlug from 'remark-slug'
@@ -20,4 +22,14 @@ const processor = unified()
   .use(rehypeFormat)
   .use(rehypeStringify)
 
-process.stdin.pipe(stream(processor)).pipe(process.stdout)
+args({
+  description:
+    'Markdown processor powered by plugins part of the unified collective',
+  extensions,
+  ignoreName: '.remarkignore',
+  name: 'remark',
+  packageField: 'remarkConfig',
+  processor,
+  rcName: '.remarkrc',
+  version: '14.0.0'
+})
