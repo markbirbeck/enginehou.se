@@ -5,7 +5,7 @@ publish:
 	mkdir publish
 
 build: publish
-	node src/ docs/index.md --output publish/index.html
+	node src/index.js docs/index.md --output publish/index.html
 
 livereload: build
 	npx livereload publish
