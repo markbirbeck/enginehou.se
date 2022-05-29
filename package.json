@@ -18,6 +18,7 @@
   "homepage": "https://github.com/markbirbeck/enginehou.se#readme",
   "dependencies": {
     "livereload": "^0.9.3",
+    "markdown-extensions": "^1.1.1",
     "rehype-document": "^6.0.1",
     "rehype-format": "^4.0.1",
     "rehype-stringify": "^9.0.3",
@@ -26,6 +27,7 @@
     "remark-slug": "^7.0.1",
     "remark-toc": "^8.0.1",
     "unified": "^10.1.1",
+    "unified-args": "^9.0.2",
     "unified-stream": "^2.0.0"
   }
 }
