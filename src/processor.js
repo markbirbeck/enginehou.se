@@ -8,14 +8,14 @@ import rehypeDocument from 'rehype-document'
 import rehypeFormat from 'rehype-format'
 import rehypeStringify from 'rehype-stringify'
 
-const processor = unified()
+const processor = (title) => unified()
   .use(remarkParse)
   .use(remarkSlug)
   .use(remarkToc)
   .use(remarkRehype)
   .use(rehypeDocument, {
     script: 'document.write(\'<script src="http://\' + (location.host || \'localhost\').split(\':\')[0] + \':35729/livereload.js?snipver=1"></\' + \'script>\')',
-    title: 'Engine House Blog'
+    title
   })
   .use(rehypeFormat)
   .use(rehypeStringify)

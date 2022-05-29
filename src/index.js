@@ -10,7 +10,7 @@ args({
   ignoreName: '.remarkignore',
   name: 'remark',
   packageField: 'remarkConfig',
-  processor,
+  processor: processor('Engine House Blog'),
   rcName: '.remarkrc',
   version: '14.0.0'
 })
